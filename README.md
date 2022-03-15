@@ -1,6 +1,6 @@
 ![image](images/microchip.jpg) 
 
-## %repoDescritpion%
+## DSPIC33C DATA EEPROM EMULATION DEMO
 
 Board Image if any.
 
