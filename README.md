@@ -1,6 +1,6 @@
 ![image](images/microchip.jpg) 
 
-## DSPIC33C DATA EEPROM EMULATION DEMO
+## DSPIC33CK CURIOSITY DATA EEPROM EMULATION DEMO
 
 
 ## Summary

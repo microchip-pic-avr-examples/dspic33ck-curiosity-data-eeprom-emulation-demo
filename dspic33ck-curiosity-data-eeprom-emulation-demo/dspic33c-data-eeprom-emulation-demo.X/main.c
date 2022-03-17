@@ -46,9 +46,9 @@ int main(void) {
     DEE_Read(addr1, &valueAtAddr1);
 
     if (valueAtAddr0 == expectedValueAtAddr0 && valueAtAddr1 == expectedValueAtAddr1) {
-        printf("Data EEPROM Emulation successful. Value at address 0 is %d and address1 is %d ", valueAtAddr0, valueAtAddr1);
+        printf("Data EEPROM Emulation successful. Value at address 0 is %d and address1 is %d \r\n", valueAtAddr0, valueAtAddr1);
     } else {
-        printf("Data EEPROM Emulation failed. Value at address 0 is %d and address1 is %d ", valueAtAddr0, valueAtAddr1);
+        printf("Data EEPROM Emulation failed. Value at address 0 is %d and address1 is %d \r\n", valueAtAddr0, valueAtAddr1);
     }
     return 0;
 
