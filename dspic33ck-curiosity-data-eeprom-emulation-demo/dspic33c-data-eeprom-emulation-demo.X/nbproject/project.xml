@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>dspic33c-data-eeprom-emulation-demo</name>
+            <name>dspic33ck-curiosity-data-eeprom-emulation-demo</name>
             <creation-uuid>aff56cb8-4c00-461b-b28b-bf2cb1593dd7</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>

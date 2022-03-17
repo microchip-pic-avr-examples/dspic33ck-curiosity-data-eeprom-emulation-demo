@@ -28,7 +28,7 @@
  */
 
 int main(void) {
-    int addr0 = 0, addr1 = 1;
+    int addr0 = 0, addr1 = 1, i;
     uint16_t valueAtAddr0 = 0;
     uint16_t valueAtAddr1 = 0;
     uint16_t expectedValueAtAddr0 = 1024;
@@ -37,7 +37,7 @@ int main(void) {
     SYSTEM_Initialize();
     DEE_Init();
 
-    for (int i = 0; i < 1024; i++) {
+    for (i = 0; i < 1024; i++) {
         DEE_Write(addr0, i + 1);
         DEE_Write(addr1, i + 2);
     }
@@ -50,6 +50,6 @@ int main(void) {
     } else {
         printf("Data EEPROM Emulation failed. Value at address 0 is %d and address1 is %d ", valueAtAddr0, valueAtAddr1);
     }
-
+    return 0;
 
 }
