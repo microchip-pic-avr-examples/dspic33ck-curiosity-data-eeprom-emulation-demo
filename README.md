@@ -38,7 +38,7 @@ If emulation fails it prints a message saying "Data EEPROM Emulation failed".
 | Device Family         | Procedure                  |
 | -----------           | -----------                |
 | "CK" Family of devices| 1. Create project <br> 2. Launch MCC <br> 3. Select "MCC Melody" <br>   <img src="images/melodySelection.jpg" width="600"> <br> 4. "16-Bit Data EEPROM Emulation Library "will be available under "Libraries" <br>     <img src="images/DEEMelody.jpg" width="600">       |
-|   All other devices except "CK" device family                    | 1. Create project <br> 2. Launch MCC <br> 3. Select "Classic MCC"Text  <br>  <img src="images/classicSelection.jpg" width="600"><br> 4. Switch core version to "5.2.1"     <br>  <img src="images/coreSwitch.jpg" width="600">  <br> 5. "16-Bit Data EEPROM Emulation Library" will be available under "Libraries" <br>   <img src="images/DEEClassic.jpg" width="600">         |
+|   All other devices except "CK" device family                    | 1. Make sure https://ww1.microchip.com/downloads/en/DeviceDoc/script-1.29.3.mc3lib is installed <br> 2. Create project <br> 3. Launch MCC <br> 4. Select "Classic MCC"  <br>  <img src="images/classicSelection.jpg" width="600"><br> 5. Switch core version to "5.2.1"     <br>  <img src="images/coreSwitch.jpg" width="600">  <br> 6. "16-Bit Data EEPROM Emulation Library" will be available under "Libraries" <br>   <img src="images/DEEClassic.jpg" width="600">         |
 
 
 
