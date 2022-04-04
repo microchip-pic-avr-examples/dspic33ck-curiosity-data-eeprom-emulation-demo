@@ -1,15 +1,26 @@
 ![image](images/microchip.jpg) 
 
-## DSPIC33CK CURIOSITY DATA EEPROM EMULATION DEMO
+## dsPIC33CK Curiosity Data EEPROM Emulation Demo
 
 
 ## Summary
 
-Data EEPROM Emulation demo.
+Microchip Technology Inc., has expanded its product portfolio to include a wide variety of cost-effective PIC® Microcontrollers (MCUs) without an internal data EEPROM.
+
+Many applications store nonvolatile information in the Flash program memory using table read and write operations. Applications that need to frequently update these data may have greater endurance requirements
+than the specified Flash endurance for the MCU/Digital Signal Controller (DSC) devices.
+
+The alternate solution of using an external, serial EEPROM device may not be appropriate for cost-sensitive or pin-constrained applications. 
+
+This 16-Bit Data EEPROM Emulation library presents a third alternative that addresses these issues. This library features an interface similar to an internal data EEPROM, which
+uses available program memory and can improve endurance by a factor as high as 500.
+
+This code example demonstrate the usage of 16-Bit Data EEPROM Emulation Library.
 
 ## Related Documentation
 
 - dsPIC33CK256MP508 microcontroller (https://www.microchip.com/dsPIC33CK256MP508)
+- Emulating Data EEPROM for PIC18 and PIC24 MCUs and dsPIC33 DSCs (https://www.microchip.com/en-us/application-notes/an1095)
 
 
 ## Software Used 
@@ -21,7 +32,7 @@ Data EEPROM Emulation demo.
 
 ## Hardware Used
 
-- DSPIC33CK CURIOSITY DEVELOPMENT BOARD (https://www.microchip.com/DM330030)
+- dsPIC33CK Curiosity Development Board (https://www.microchip.com/DM330030)
 - Micro USB Cable
 
 
@@ -33,7 +44,7 @@ If emulation fails it prints a message saying "Data EEPROM Emulation failed".
 
 ## Accessing 16-Bit Data EEPROM Emulation Library
 
-*Note:* More MCC Melody devices support will be added in next releases.
+*Note:* More MCC Melody devices support will be added in future releases.
 
 | Device Family         | Procedure                  |
 | -----------           | -----------                |

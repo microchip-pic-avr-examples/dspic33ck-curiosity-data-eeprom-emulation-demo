@@ -1,5 +1,5 @@
 /*
-© [2022] Microchip Technology Inc. and its subsidiaries.
+ï¿½ [2022] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -46,10 +46,11 @@ int main(void) {
     DEE_Read(addr1, &valueAtAddr1);
 
     if (valueAtAddr0 == expectedValueAtAddr0 && valueAtAddr1 == expectedValueAtAddr1) {
-        printf("Data EEPROM Emulation successful. Value at address 0 is %d and address1 is %d \r\n", valueAtAddr0, valueAtAddr1);
+        printf("Data EEPROM Emulation successful. Value at address 0 is %d and address 1 is %d \r\n", valueAtAddr0, valueAtAddr1);
     } else {
-        printf("Data EEPROM Emulation failed. Value at address 0 is %d and address1 is %d \r\n", valueAtAddr0, valueAtAddr1);
+        printf("Data EEPROM Emulation failed. Value at address 0 is %d and address 1 is %d \r\n", valueAtAddr0, valueAtAddr1);
     }
+    while(1);
     return 0;
 
 }
