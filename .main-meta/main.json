@@ -1,45 +1,47 @@
 {
-   "metaDataVersion":"1.0.0",
-   "category":"com.microchip.ide.project",
-   "content":{
-      "metaDataVersion":"1.3.0",
-      "name":"com.microchip.mplabx.project.dspic33c-data-eeprom-emulation-demo",
-      "version":"x.x.x",
-      "displayName":"xxxxxxxxxxxxxxx",
-      "projectName":"dspic33c-data-eeprom-emulation-demo",
-      "shortDescription":"xxxxxxxxxxxxxxx",
-      "ide":{
-         "name":"MPLABX",
-         "semverRange":">=5.40.0"
+   "metaDataVersion": "1.0.0",
+   "category": "com.microchip.ide.project",
+   "content": {
+      "metaDataVersion": "1.3.0",
+      "name": "com.microchip.mplabx.project.dspic33ck-curiosity-data-eeprom-emulation-demo",
+      "version": "1.0.0",
+      "displayName": "dsPIC33CK Curiosity Data EEPROM Emulation Demo",
+      "projectName": "dspic33ck-curiosity-data-eeprom-emulation-demo",
+      "shortDescription": "dsPIC33CK Curiosity Data EEPROM Emulation Demo",
+      "ide": {
+         "name": "MPLABX",
+         "semverRange": ">=6.0.0"
       },
-      "compiler":{
-         "name":"XC16",
-         "semverRange":"^1.50.0"
+      "compiler": {
+         "name": "XC16",
+         "semverRange": "^2.0.0"
       },
-      "dfp":{
-         "name":"xxxxxxxxxxxxxxx",
-         "semverRange":">=x.x.x"
+      "dfp": {
+         "name": "dsPIC33CK-MP_DFP",
+         "semverRange": ">=1.6.176"
       },
-	  "configurator": {
+      "configurator": {
          "name": "MCC",
-         "semverRange": ">=4.0.1"
+         "semverRange": ">=5.1.1"
       },
-      "device":{
-         "metaDataVersion":"1.0.0",
-         "category":"com.microchip.portal.contentRef",
-         "content":{
-            "metaDataVersion":"1.0.0",
-            "category":"com.microchip.device",
-            "name":"xxxxxxxxxxxxxxx",
-            "versionRange":"*"
+      "device": {
+         "metaDataVersion": "1.0.0",
+         "category": "com.microchip.portal.contentRef",
+         "content": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.device",
+            "name": "DSPIC33CK256MP508",
+            "versionRange": "*"
          }
       },
-	  "peripherals":[
-         "GPIO",
+      "peripherals": [
+         "UART",
+         "FLASH"
       ],
-      "keywords":[
-         "GPIO",
-         "UART"
+      "keywords": [
+         "EEPROM",
+         "DEE",
+         "Data EEPROM Emulation"
       ]
    }
 }
