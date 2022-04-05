@@ -28,6 +28,7 @@ This code example demonstrate the usage of 16-Bit Data EEPROM Emulation Library.
 - MPLAB® X IDE v6.00 or newer (https://www.microchip.com/mplabx)
 - MPLAB® XC16 v2.00 or newer (https://www.microchip.com/xc) 
 - Any of the serial terminal application. Example: Tera Term (https://ttssh2.osdn.jp/index.html.en)
+- 16-bit Data EEPROM Emulation Library (DEE) for PIC24 MCUs and dsPIC33 DSCs (https://www.microchip.com/en-us/software-library/16-bit_data_eeprom_emulation)
 
 
 ## Hardware Used
