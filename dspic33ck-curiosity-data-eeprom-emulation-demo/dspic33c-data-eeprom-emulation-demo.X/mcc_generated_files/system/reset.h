@@ -6,11 +6,9 @@
  * @defgroup  resetdriver Reset Driver
  *            
  * @brief     Reset driver using dsPIC MCUs.  
- *
- * @version   Firmware Driver Version 1.0.1
- *
- * @version   PLIB Version 1.1.0-dev.1
- *
+ *            
+ * @version   Driver Version 1.0.0
+ *            
  * @skipline  Device : dsPIC33CK256MP508
 */
 

@@ -6,11 +6,9 @@
  * @defgroup  config_bitsdriver CONFIGBITS Driver
  *            
  * @brief     Device Configuration Bits using dsPIC MCUs
- *
- * @version   Firmware Driver Version 1.0.1
- *
- * @version   PLIB Version 1.2.0-dev.1
- *
+ *            
+ * @version   Driver Version 1.0.0
+ *            
  * @skipline  Device : dsPIC33CK256MP508
 */
 

@@ -6,11 +6,9 @@
  * @defgroup  clockdriver Clock Driver
  *            
  * @brief     Clock configurator driver for System and Peripheral Clock using dsPIC MCUs.
- *
- * @version   Firmware Driver Version 1.0.2
- *
- * @version   PLIB Version 1.4.0-dev.1
- *
+ *            
+ * @version   Driver Version 1.0.1
+ *            
  * @skipline  Device : dsPIC33CK256MP508
 */
 

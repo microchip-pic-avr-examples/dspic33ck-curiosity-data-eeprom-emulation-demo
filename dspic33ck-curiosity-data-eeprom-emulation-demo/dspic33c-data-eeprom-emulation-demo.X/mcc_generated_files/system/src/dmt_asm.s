@@ -8,9 +8,7 @@
 ; 
 ; @brief     Assembly language optimized helper routines required for calibration
 ;
-; @version   Firmware Driver Version 1.2.0
-;
-; @version   PLIB Version 1.1.0-dev.1
+; @version   Driver Version 1.1.0
 ;
 ; @skipline  Device : dsPIC33CK256MP508
 ;
