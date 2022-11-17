@@ -6,9 +6,11 @@
  * @ingroup   resetdriver
  *            
  * @brief     This is the generated driver types header file for the RESET driver
- *            
- * @version   Driver Version 1.0.0
- *            
+ *
+ * @version   Firmware Driver Version 1.0.1
+ *
+ * @version   PLIB Version 1.1.0-dev.1
+ *
  * @skipline  Device : dsPIC33CK256MP508
 */
 

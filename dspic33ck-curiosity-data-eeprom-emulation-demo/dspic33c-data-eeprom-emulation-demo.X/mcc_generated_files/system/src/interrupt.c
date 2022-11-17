@@ -7,7 +7,7 @@
  *            
  * @brief     This is the generated driver source file for INTERRUPT driver
  *            
- * @version   Driver Version 1.0.0
+ * @version   Driver Version 1.1.0
  *            
  * @skipline  Device : dsPIC33CK256MP508
 */
@@ -45,30 +45,10 @@ void INTERRUPT_Initialize(void)
     // Priority: 1
     IPC11bits.DMTIP = 1;
     
-    // U1EVT: UART1 Event
-    // Priority: 1
-    IPC47bits.U1EVTIP = 1;
-    
-    // U1E: UART1 Error
-    // Priority: 1
-    IPC12bits.U1EIP = 1;
-    
-    // U1TX: UART1 TX
-    // Priority: 1
-    IPC3bits.U1TXIP = 1;
-    
-    // U1RX: UART1 RX
-    // Priority: 1
-    IPC2bits.U1RXIP = 1;
-    
 }
 
 void INTERRUPT_Deinitialize(void)
 {
     //POR default value of priority
     IPC11bits.DMTIP = 4;
-    IPC47bits.U1EVTIP = 4;
-    IPC12bits.U1EIP = 4;
-    IPC3bits.U1TXIP = 4;
-    IPC2bits.U1RXIP = 4;
 }

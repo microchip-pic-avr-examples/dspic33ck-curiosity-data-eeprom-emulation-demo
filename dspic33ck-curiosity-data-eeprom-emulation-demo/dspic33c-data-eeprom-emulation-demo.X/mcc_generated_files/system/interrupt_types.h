@@ -1,16 +1,14 @@
 /**
- * RESET Generated Driver Header File
+ * INTERRUPT Generated Driver Header File 
  * 
- * @file      reset.h
+ * @file      interrupt_types.h
  *            
- * @defgroup  resetdriver Reset Driver
+ * @defgroup  interruptdriver
  *            
- * @brief     Reset driver using dsPIC MCUs.  
- *
- * @version   Firmware Driver Version 1.0.1
- *
- * @version   PLIB Version 1.1.0-dev.1
- *
+ * @brief     This is the generated driver types header file for the INTERRUPT driver
+ *            
+ * @version   Driver Version 1.1.0
+ *            
  * @skipline  Device : dsPIC33CK256MP508
 */
 
@@ -35,39 +33,26 @@
     THIS SOFTWARE.
 */
 
-#ifndef RESET_H
-#define    RESET_H
-
-#include <stdint.h>
-#include "reset_types.h"
+#ifndef INTERRUPT_TYPES_H
+#define INTERRUPT_TYPES_H
 
 /**
- * @ingroup  resetdriver
- * @brief    Returns the cause of previous reset
- * @pre      This function should be called before any use of CLRWDT
- *           since it has a side-effect of clearing the appropriate bits in the
- *           register showing reset cause.
- * @return   Returns a value corresponding to a possible cause for reset.
- */
-uint16_t RESET_CauseGet(void);
-
-/**
- * @ingroup  resetdriver
- * @brief    It handles the reset cause by clearing the cause register values.
- *           This is a weak attribute function. The user can 
- *           override and implement the same function without weak attribute.
- * @return   none  
- */
-void RESET_CauseHandler(void);
-
-/**
- * @ingroup  resetdriver
- * @brief    Clears the Reset Cause register
- * @return   none  
- */
-void RESET_CauseClearAll();
-
-#endif    /* RESET_H */
-/**
- End of File
+ * @ingroup  interruptdriver
+ * @enum     interrupt_types.h
+ * @brief    Defines the interrupt priority values.
 */
+
+enum INTERRUPT_PRIORITY
+{
+	INTERRUPT_PRIORITY_1 = 1,
+	INTERRUPT_PRIORITY_2 = 2,
+	INTERRUPT_PRIORITY_3 = 3,
+	INTERRUPT_PRIORITY_4 = 4,
+	INTERRUPT_PRIORITY_5 = 5,
+	INTERRUPT_PRIORITY_6 = 6,
+	INTERRUPT_PRIORITY_7 = 7,
+	INTERRUPT_MAX_PRIORITY = 7
+};
+
+#endif
+

@@ -9,7 +9,9 @@
  *            is to interrupt the processor in the event of a software 
  *            malfunction.
  *
- * @version   Driver Version 1.1.0
+ * @version   Firmware Driver Version 1.2.0
+ *
+ * @version   PLIB Version 1.1.0-dev.1
  *
  * @skipline  Device : dsPIC33CK256MP508
 */
@@ -137,7 +139,7 @@ uint32_t DMT_CalibratedCounterGet(void);
  * @param[in]  handler - Address of the callback function.  
  * @return     none
  */
-void DMT_EventCallbackRegister(void* handler);
+void DMT_EventCallbackRegister(void (*handler)(void));
 
 /**
  * @ingroup  dmtdriver

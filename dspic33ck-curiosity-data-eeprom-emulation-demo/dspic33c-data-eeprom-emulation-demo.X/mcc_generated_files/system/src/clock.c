@@ -6,9 +6,11 @@
  * @ingroup   clockdriver
  *            
  * @brief     This is the generated source file for CLOCK driver
- *            
- * @version   Driver Version 1.0.0
- *            
+ *
+ * @version   Firmware Driver Version 1.0.2
+ *
+ * @version   PLIB Version 1.4.0-dev.1
+ *
  * @skipline  Device : dsPIC33CK256MP508
 */
 
@@ -57,16 +59,16 @@ void CLOCK_Initialize(void)
     OSCTUN = 0x0;
     // PLLPOST 1:4; VCODIV FVCO/4; POST2DIV 1:1; 
     PLLDIV = 0x41;
-    // ENAPLL disabled; FRCSEL FRC Oscillator; APLLPRE ; 
+    // ENAPLL disabled; FRCSEL FRC Oscillator; APLLPRE 1:1; 
     ACLKCON1 = 0x101;
-    // APLLFBDIV ; 
+    // APLLFBDIV 150; 
     APLLFBD1 = 0x96;
-    // APSTSCLR ; APOST2DIV ; AVCODIV FVCO/4; 
-    APLLDIV1 = 0x31;
+    // APSTSCLR 1:4; APOST2DIV 1:1; AVCODIV FVCO/4; 
+    APLLDIV1 = 0x41;
     // CANCLKEN disabled; CANCLKSEL FVCO/4; CANCLKDIV Divide by 1; 
     CANCLKCON = 0x500;
-    // ROEN enabled; DIVSWEN disabled; ROSLP disabled; ROSEL FOSC; OE enabled; ROSIDL disabled; 
-    REFOCONL = 0x9000;
+    // ROEN disabled; DIVSWEN disabled; ROSLP disabled; ROSEL ; OE disabled; ROSIDL disabled; 
+    REFOCONL = 0x0;
     // RODIV 0; 
     REFOCONH = 0x0;
     // ROTRIM 0; 

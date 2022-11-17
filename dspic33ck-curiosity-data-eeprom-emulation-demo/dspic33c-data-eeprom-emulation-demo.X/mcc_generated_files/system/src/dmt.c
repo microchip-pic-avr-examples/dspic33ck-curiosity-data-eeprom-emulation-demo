@@ -7,7 +7,9 @@
  * 
  * @brief     This is the generated driver source file for DMT driver
  *
- * @version   Driver Version 1.1.0
+ * @version   Firmware Driver Version 1.2.0
+ *
+ * @version   PLIB Version 1.1.0-dev.1
  *
  * @skipline  Device : dsPIC33CK256MP508
 */
@@ -42,7 +44,7 @@
 // Section: Private Variable Definitions
 static bool bPreCleared = false;
 uint32_t calibOffset = 0;
-void (*DMT_EventHandler)(void) = NULL;
+static void (*DMT_EventHandler)(void) = NULL;
 
 // Section: File specific functions
 
@@ -129,7 +131,7 @@ uint32_t DMT_CounterGet(void)
     return (counter | DMTCNTL);
 }
 
-void DMT_EventCallbackRegister(void* handler)
+void DMT_EventCallbackRegister(void (*handler)(void))
 {
     if(NULL != handler)
     {
@@ -145,7 +147,10 @@ void __attribute__ ((weak)) DMT_EventCallback( void )
 
 void __attribute__ ((interrupt, no_auto_psv)) _DMTInterrupt(void)
 {
-    (*DMT_EventHandler)();
+    if(NULL != DMT_EventHandler)
+    {
+        (*DMT_EventHandler)();
+    }
     IFS2bits.DMTIF = 0U;
 }
 
