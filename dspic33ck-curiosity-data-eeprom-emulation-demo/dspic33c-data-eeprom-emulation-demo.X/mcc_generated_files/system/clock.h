@@ -7,7 +7,7 @@
  *            
  * @brief     Clock configurator driver for System and Peripheral Clock using dsPIC MCUs.
  *            
- * @version   Driver Version 1.0.0
+ * @version   Driver Version 1.0.1
  *            
  * @skipline  Device : dsPIC33CK256MP508
 */

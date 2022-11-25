@@ -1,11 +1,11 @@
 /**
- * INTERRUPT Generated Driver Source File 
+ * INTERRUPT Generated Driver Header File 
  * 
- * @file      interrupt.c
+ * @file      interrupt_types.h
  *            
- * @ingroup   interruptdriver
+ * @defgroup  interruptdriver
  *            
- * @brief     This is the generated driver source file for INTERRUPT driver
+ * @brief     This is the generated driver types header file for the INTERRUPT driver
  *            
  * @version   Driver Version 1.1.0
  *            
@@ -33,22 +33,26 @@
     THIS SOFTWARE.
 */
 
-// Section: Includes
-#include <xc.h>
-#include "../interrupt.h"
+#ifndef INTERRUPT_TYPES_H
+#define INTERRUPT_TYPES_H
 
-// Section: Driver Interface Function Definitions
+/**
+ * @ingroup  interruptdriver
+ * @enum     interrupt_types.h
+ * @brief    Defines the interrupt priority values.
+*/
 
-void INTERRUPT_Initialize(void)
+enum INTERRUPT_PRIORITY
 {
-    // DMT: Dead Man Timer
-    // Priority: 1
-    IPC11bits.DMTIP = 1;
-    
-}
+	INTERRUPT_PRIORITY_1 = 1,
+	INTERRUPT_PRIORITY_2 = 2,
+	INTERRUPT_PRIORITY_3 = 3,
+	INTERRUPT_PRIORITY_4 = 4,
+	INTERRUPT_PRIORITY_5 = 5,
+	INTERRUPT_PRIORITY_6 = 6,
+	INTERRUPT_PRIORITY_7 = 7,
+	INTERRUPT_MAX_PRIORITY = 7
+};
 
-void INTERRUPT_Deinitialize(void)
-{
-    //POR default value of priority
-    IPC11bits.DMTIP = 4;
-}
+#endif
+

@@ -8,7 +8,7 @@
  * 
  * @brief       FLASH Driver using dsPIC MCUs
  *
- * @version     Driver Version 1.0.0
+ * @version     Driver Version 1.0.2
  *
  * @skipline    Device : dsPIC33CK256MP508
 */

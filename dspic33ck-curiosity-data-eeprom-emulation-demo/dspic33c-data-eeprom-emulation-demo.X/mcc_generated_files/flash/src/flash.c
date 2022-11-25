@@ -7,7 +7,7 @@
  *            
  * @brief     This is the generated driver source file for FLASH driver
  *            
- * @version   Driver Version 1.0.1
+ * @version   Driver Version 1.0.2
  *           
  * @skipline  Device : dsPIC33CK256MP508
 */

@@ -27,6 +27,7 @@
           <itemPath>mcc_generated_files/system/reset_types.h</itemPath>
           <itemPath>mcc_generated_files/system/traps.h</itemPath>
           <itemPath>mcc_generated_files/system/system.h</itemPath>
+          <itemPath>mcc_generated_files/system/interrupt_types.h</itemPath>
         </logicalFolder>
         <logicalFolder name="uart" displayName="uart" projectFiles="true">
           <itemPath>mcc_generated_files/uart/uart1.h</itemPath>
@@ -80,7 +81,7 @@
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
-      <itemPath>dspic33c-data-eeprom-emulation-demo.mc3</itemPath>
+      <itemPath>dspic33ck-curiosity-data-eeprom-emulation-demo.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
