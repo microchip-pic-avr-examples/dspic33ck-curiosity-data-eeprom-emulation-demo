@@ -7,7 +7,7 @@
  * 
  * @brief     This is the generated driver source file for DMT driver
  *
- * @version   Driver Version 1.1.0
+ * @version   Driver Version 1.1.1
  *
  * @skipline  Device : dsPIC33CK256MP508
 */
@@ -145,7 +145,10 @@ void __attribute__ ((weak)) DMT_EventCallback( void )
 
 void __attribute__ ((interrupt, no_auto_psv)) _DMTInterrupt(void)
 {
-    (*DMT_EventHandler)();
+    if(NULL != DMT_EventHandler)
+    {
+        (*DMT_EventHandler)();
+    }
     IFS2bits.DMTIF = 0U;
 }
 

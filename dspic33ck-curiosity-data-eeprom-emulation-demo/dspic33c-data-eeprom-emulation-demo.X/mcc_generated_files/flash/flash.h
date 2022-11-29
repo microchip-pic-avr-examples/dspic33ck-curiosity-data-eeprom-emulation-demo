@@ -4,11 +4,11 @@
  * 
  * @file         flash.h
  * 
- * @defgroup     flashdriver Flash Driver
+ * @ingroup      flashdriver Flash Driver
  * 
  * @brief        FLASH driver using dsPIC MCUs
  *
- * @version      Driver Version 1.0.1
+ * @version      Driver Version 1.0.2
  *
  * @skipline     Device : dsPIC33CK256MP508
 */

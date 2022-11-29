@@ -61,11 +61,11 @@
 #pragma config XTBST = ENABLE    //XT Boost->Boost the kick-start
 
 // FWDT
-#pragma config RWDTPS = PS1    //Run Mode Watchdog Timer Post Scaler select bits->1:1
-#pragma config RCLKSEL = FCY    //Watchdog Timer Clock Select bits->Use peripheral clk when system clock is not INTOSC/LPRC and device is not in Sleep;otherwise, use INTOSC/LPRC
+#pragma config RWDTPS = PS1048576    //Run Mode Watchdog Timer Post Scaler select bits->1:1048576
+#pragma config RCLKSEL = LPRC    //Watchdog Timer Clock Select bits->Always use LPRC
 #pragma config WINDIS = ON    //Watchdog Timer Window Enable bit->Watchdog Timer in Non-Window mode
 #pragma config WDTWIN = WIN25    //Watchdog Timer Window Select bits->WDT Window is 25% of WDT period
-#pragma config SWDTPS = PS1    //Sleep Mode Watchdog Timer Post Scaler select bits->1:1
+#pragma config SWDTPS = PS1048576    //Sleep Mode Watchdog Timer Post Scaler select bits->1:1048576
 #pragma config FWDTEN = ON_SW    //Watchdog Timer Enable bit->WDT controlled via SW, use WDTCON.ON bit
 
 // FPOR

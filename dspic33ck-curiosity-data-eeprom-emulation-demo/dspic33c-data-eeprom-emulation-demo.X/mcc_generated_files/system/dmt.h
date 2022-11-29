@@ -9,7 +9,7 @@
  *            is to interrupt the processor in the event of a software 
  *            malfunction.
  *
- * @version   Driver Version 1.1.0
+ * @version   Driver Version 1.1.1
  *
  * @skipline  Device : dsPIC33CK256MP508
 */

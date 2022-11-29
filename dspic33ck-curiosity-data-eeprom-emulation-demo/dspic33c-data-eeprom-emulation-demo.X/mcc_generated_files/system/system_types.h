@@ -7,7 +7,7 @@
  *            
  * @brief     This is the generated driver types header file for the System driver
  *            
- * @version   Driver Version 1.0.0
+ * @version   Driver Version 1.0.1
  *            
  * @skipline  Device : dsPIC33CK256MP508
 */

@@ -4,7 +4,7 @@
    "content": {
       "metaDataVersion": "1.3.0",
       "name": "com.microchip.mplabx.project.dspic33ck-curiosity-data-eeprom-emulation-demo",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "displayName": "dsPIC33CK Curiosity Data EEPROM Emulation Demo",
       "projectName": "dspic33ck-curiosity-data-eeprom-emulation-demo",
       "shortDescription": "dsPIC33CK Curiosity Data EEPROM Emulation Demo",

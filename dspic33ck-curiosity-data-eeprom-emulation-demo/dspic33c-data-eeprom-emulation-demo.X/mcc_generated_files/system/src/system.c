@@ -7,7 +7,7 @@
  *            
  * @brief     This is the generated driver header file for the System driver
  *            
- * @version   Driver Version 1.0.0
+ * @version   Driver Version 1.0.1
  *            
  * @skipline  Device : dsPIC33CK256MP508
 */
@@ -35,10 +35,9 @@
 #include "../system.h"
 #include "../system_types.h"
 #include "../clock.h"
+#include "../pins.h"
 #include "../dmt.h"
 #include "../interrupt.h"
-#include "../pins.h"
-#include "../../uart/uart1.h"
 
 
 void SYSTEM_Initialize(void)
@@ -46,9 +45,8 @@ void SYSTEM_Initialize(void)
     CLOCK_Initialize();
     PINS_Initialize();
     DMT_Initialize();
-    UART1_Initialize();
-    INTERRUPT_Initialize();
     INTERRUPT_GlobalEnable();
+    INTERRUPT_Initialize();
 }
 
 /**
