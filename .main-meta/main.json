@@ -10,7 +10,7 @@
       "shortDescription": "dsPIC33CK Curiosity Data EEPROM Emulation Demo",
       "ide": {
          "name": "MPLABX",
-         "semverRange": ">=6.0.0"
+         "semverRange": ">=6.15.0"
       },
       "compiler": {
          "name": "XC16",
