@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>dspic33ck-curiosity-dual-panel-dee-demo-partition2</name>
+            <name>dee-dual-panel-demo-partition2</name>
             <creation-uuid>d3d39502-7e96-4414-83d5-147c1098044e</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>

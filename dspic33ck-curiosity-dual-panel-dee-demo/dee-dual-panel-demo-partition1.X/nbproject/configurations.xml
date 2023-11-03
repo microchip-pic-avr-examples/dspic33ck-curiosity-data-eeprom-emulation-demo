@@ -114,20 +114,20 @@
         <archiverTool>
         </archiverTool>
         <loading>
-          <makeArtifact PL="../dspic33ck-curiosity-dual-panel-dee-demo-partition2.X"
+          <makeArtifact PL="../dee-dual-panel-demo-partition2.X"
                         CT="1"
                         CN="default"
                         AC="true"
                         BL="true"
-                        WD="../dspic33ck-curiosity-dual-panel-dee-demo-partition2.X"
+                        WD="../dee-dual-panel-demo-partition2.X"
                         BC="${MAKE}  -f Makefile CONF=default"
                         DBC="${MAKE}  -f Makefile CONF=default TYPE_IMAGE=DEBUG_RUN"
                         CC="rm -rf &quot;build/default&quot; &quot;dist/default&quot;"
-                        OP="dist/default/production/dspic33ck-curiosity-dual-panel-dee-demo-partition2.X.production.hex"
-                        DOP="dist/default/debug/dspic33ck-curiosity-dual-panel-dee-demo-partition2.X.debug.elf"
-                        FL="dist/default/production/dspic33ck-curiosity-dual-panel-dee-demo-partition2.X.production.hex"
-                        PD="dist/default/production/dspic33ck-curiosity-dual-panel-dee-demo-partition2.X.production.elf"
-                        DD="dist/default/debug/dspic33ck-curiosity-dual-panel-dee-demo-partition2.X.debug.elf">
+                        OP="dist/default/production/dee-dual-panel-demo-partition2.X.production.hex"
+                        DOP="dist/default/debug/dee-dual-panel-demo-partition2.X.debug.elf"
+                        FL="dist/default/production/dee-dual-panel-demo-partition2.X.production.hex"
+                        PD="dist/default/production/dee-dual-panel-demo-partition2.X.production.elf"
+                        DD="dist/default/debug/dee-dual-panel-demo-partition2.X.debug.elf">
           </makeArtifact>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
@@ -352,6 +352,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-2beff"/>
         <property key="poweroptions.powerenable" value="true"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/MCU16CE/dspic33c-data-eeprom-emulation-demo/dspic33ck-curiosity-dual-panel-dee-demo/dspic33ck-curiosity-dual-panel-dee-demo-partition1.X/debug/default/dspic33ck-curiosity-dee-demo-partition1_ptg"/>
         <property key="programmerToGoImageName"
                   value="dspic33ck-curiosity-dee-demo-partition1_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
@@ -459,6 +461,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-2beff"/>
         <property key="poweroptions.powerenable" value="true"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/MCU16CE/dspic33c-data-eeprom-emulation-demo/dspic33ck-curiosity-dual-panel-dee-demo/dspic33ck-curiosity-dual-panel-dee-demo-partition1.X/debug/default/dspic33ck-curiosity-dee-demo-partition1_ptg"/>
         <property key="programmerToGoImageName"
                   value="dspic33ck-curiosity-dee-demo-partition1_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>

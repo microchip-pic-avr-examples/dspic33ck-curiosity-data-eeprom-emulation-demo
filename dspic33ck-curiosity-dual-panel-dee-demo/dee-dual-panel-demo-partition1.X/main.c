@@ -22,13 +22,14 @@
 #include "mcc_generated_files/system/system.h"
 #include "mcc_generated_files/system/pins.h"
 #include "mcc_generated_files/flash/flash_nonblocking.h"
-//#include <stdio.h>
+#include <stdio.h>
 
 #define IBSEQ_INDEX 1022
 #define PARTITION2_CONFIG_BITS_START_ADDRESS 0x415F00
 #define PARTITION2_NEW_IBSEQ 0xFFE001
 #define EXPECTED_VALUE_AT_ADDR0 1024
 #define EXPECTED_VALUE_AT_ADDR1 1025
+#define EXPECTED_VALUE_AT_ADDR2 1026
 
 void UpdateConfigBitFBTSEQ();
 
@@ -48,36 +49,34 @@ void FlashProgramOpHandler(void *context) {
  */
 
 int main(void) {
-    uint16_t addr0 = 0, addr1 = 1, index;
+    uint16_t addr0 = 0, addr1 = 1, addr2=2, index;
     uint16_t valueAtAddr0 = 0;
     uint16_t valueAtAddr1 = 0;
+    uint16_t valueAtAddr2 = 0;
 
     SYSTEM_Initialize();
-    printf("************* Application in Partition1 starts *******************");
+    printf("************* Application in Partition1 starts *******************\r\n");
     DEE_Init();
     for (index = 0; index < 1024; index++) {
         DEE_Write(addr0, index + 1);
         DEE_Write(addr1, index + 2);
+        DEE_Write(addr2, index + 3);
     }
 
     DEE_Read(addr0, &valueAtAddr0);
     DEE_Read(addr1, &valueAtAddr1);
+    DEE_Read(addr2, &valueAtAddr2);
 
     /*Update the partition2 FBTSEQ config bit so that after reboot partition2 becomes active partition*/
     UpdateConfigBitFBTSEQ();
 
-    if (valueAtAddr0 == EXPECTED_VALUE_AT_ADDR0 && valueAtAddr1 == EXPECTED_VALUE_AT_ADDR1) {
+    if (valueAtAddr0 == EXPECTED_VALUE_AT_ADDR0 && valueAtAddr1 == EXPECTED_VALUE_AT_ADDR1 && valueAtAddr2 == EXPECTED_VALUE_AT_ADDR2) {
         LED2_SetHigh();
-        printf("Data EEPROM Emulation successful. Value at address 0 is %d and address 1 is %d \r\n", valueAtAddr0, valueAtAddr1);
+        printf("Data EEPROM Emulation successful.\r\n Value at address 0 is %d\r\n Value at address 1 is %d\r\n Value at address 2 is %d\r\n", valueAtAddr0, valueAtAddr1, valueAtAddr2);
     } else {
-        printf("Data EEPROM Emulation failed. Value at address 0 is %d and address 1 is %d \r\n", valueAtAddr0, valueAtAddr1);
+        printf("Data EEPROM Emulation failed.\r\n Value at address 0 is %d\r\n Value at address 1 is %d\r\n Value at address 2 is %d\r\n", valueAtAddr0, valueAtAddr1, valueAtAddr2);
     }
-    printf("************* Application in Partition1 ends *******************");
-    for(int index=0;index<200;index++)
-    {
-        Nop();
-    }
-    asm("Reset");
+    printf("************* Application in Partition1 ends *******************\r\n");
     while (1);
 }
 
