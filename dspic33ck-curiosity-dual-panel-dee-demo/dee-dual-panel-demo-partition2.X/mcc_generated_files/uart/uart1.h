@@ -7,9 +7,9 @@
  *            
  * @brief     This is the generated driver header file for the UART1 driver
  *            
- * @skipline @version   Firmware Driver Version 1.6.1
+ * @skipline @version   Firmware Driver Version 1.7.0
  *
- * @skipline @version   PLIB Version 1.4.1
+ * @skipline @version   PLIB Version 1.5.0
  *            
  * @skipline  Device : dsPIC33CK256MP508
 */

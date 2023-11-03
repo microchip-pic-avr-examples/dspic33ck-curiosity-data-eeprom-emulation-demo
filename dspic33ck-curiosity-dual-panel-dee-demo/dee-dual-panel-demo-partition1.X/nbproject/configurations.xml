@@ -85,7 +85,7 @@
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
-      <itemPath>dspic33ck-curiosity-dee-demo-partition1.mc3</itemPath>
+      <itemPath>dee-dual-panel-demo-partition1.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

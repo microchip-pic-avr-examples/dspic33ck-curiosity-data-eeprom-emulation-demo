@@ -107,8 +107,8 @@
 #pragma config CTXT4 = OFF    //Specifies Interrupt Priority Level (IPL) Associated to Alternate Working Register 4 bits->Not Assigned
 
 // FBTSEQ
-#pragma config BSEQ = 0x008    //Relative value defining which partition will be active after device Reset; the partition containing a lower boot number will be active
-#pragma config IBSEQ = 0xFF7    //The one's complement of BSEQ; must be calculated by the user and written during device programming.
+#pragma config BSEQ = 0x003    //Relative value defining which partition will be active after device Reset; the partition containing a lower boot number will be active
+#pragma config IBSEQ = 0xFFC    //The one's complement of BSEQ; must be calculated by the user and written during device programming.
 
 // FBOOT
 #pragma config BTMODE = DUAL    //Device Boot Mode Configuration->Device is in Dual Partition mode

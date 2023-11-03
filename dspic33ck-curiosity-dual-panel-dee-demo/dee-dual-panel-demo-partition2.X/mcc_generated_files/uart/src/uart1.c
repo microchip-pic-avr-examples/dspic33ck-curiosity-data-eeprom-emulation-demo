@@ -7,9 +7,9 @@
  *            
  * @brief     This is the generated driver source file for the UART1 driver.
  *            
- * @skipline @version   Firmware Driver Version 1.6.1
+ * @skipline @version   Firmware Driver Version 1.7.0
  *
- * @skipline @version   PLIB Version 1.4.1
+ * @skipline @version   PLIB Version 1.5.0
  *            
  * @skipline  Device : dsPIC33CK256MP508
 */
@@ -66,6 +66,8 @@ const struct UART_INTERFACE UART1_Drv = {
     .IsTxDone = &UART1_IsTxDone,
     .TransmitEnable = &UART1_TransmitEnable,
     .TransmitDisable = &UART1_TransmitDisable,
+    .TransmitInterruptEnable = NULL,
+    .TransmitInterruptDisable = NULL,
     .AutoBaudSet = &UART1_AutoBaudSet,
     .AutoBaudQuery = &UART1_AutoBaudQuery,
     .AutoBaudEventEnableGet = &UART1_AutoBaudEventEnableGet,

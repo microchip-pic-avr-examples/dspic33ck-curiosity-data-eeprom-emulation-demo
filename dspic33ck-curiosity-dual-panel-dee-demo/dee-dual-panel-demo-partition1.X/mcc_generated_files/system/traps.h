@@ -56,6 +56,7 @@ enum TRAPS_ERROR_CODE
     TRAPS_ADDRESS_ERR = 2, /**< Address error Trap vector */
     TRAPS_MATH_ERR = 3, /**< Math Error Trap vector */
     TRAPS_HARD_ERR = 7, /**< Generic Hard Trap vector */
+    TRAPS_DAE_ERR = 9, /**< Generic Soft Trap vector */
     TRAPS_DOOVR_ERR = 10, /**< Generic Soft Trap vector */
     TRAPS_APLL_ERR = 11, /**< Generic Soft Trap vector */
     TRAPS_NVM_ERR = 12, /**< Generic Soft Trap vector */

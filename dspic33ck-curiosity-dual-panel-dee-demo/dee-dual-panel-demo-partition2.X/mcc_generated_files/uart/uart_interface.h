@@ -7,9 +7,9 @@
  *            
  * @brief     Universal Asynchronous Receiver Transmitter driver using dsPIC MCUs
  *            
- * @skipline @version   Firmware Driver Version 1.6.1
+ * @skipline @version   Firmware Driver Version 1.7.0
  *
- * @skipline @version   PLIB Version 1.4.1
+ * @skipline @version   PLIB Version 1.5.0
  *            
  * @skipline  Device : dsPIC33CK256MP508
 */
@@ -79,6 +79,12 @@ struct UART_INTERFACE{
     
     void (*TransmitDisable)(void);
     ///< Pointer to UARTx_TransmitDisable e.g. \ref UART1_TransmitDisable
+    
+    void (*TransmitInterruptEnable)(void);
+    ///< Pointer to UARTx_TransmitInterruptEnable e.g. \ref UART1_TransmitInterruptEnable
+    
+    void (*TransmitInterruptDisable)(void);
+    ///< Pointer to UARTx_TransmitInterruptDisable e.g. \ref UART1_TransmitInterruptDisable
     
     void (*AutoBaudSet)(bool enable);
     ///< Pointer to UARTx_AutoBaudSet e.g. \ref UART1_AutoBaudSet

@@ -74,7 +74,7 @@
 #pragma config BISTDIS = DISABLED    //Memory BIST Feature Disable->mBIST on reset feature disabled
 
 // FICD
-#pragma config ICS = PGD3    //ICD Communication Channel Select bits->Communicate on PGC1 and PGD1
+#pragma config ICS = PGD1    //ICD Communication Channel Select bits->Communicate on PGC1 and PGD1
 #pragma config JTAGEN = OFF    //JTAG Enable bit->JTAG is disabled
 #pragma config NOBTSWP = DISABLED    //BOOTSWP instruction disable bit->BOOTSWP instruction is disabled
 
@@ -107,8 +107,8 @@
 #pragma config CTXT4 = OFF    //Specifies Interrupt Priority Level (IPL) Associated to Alternate Working Register 4 bits->Not Assigned
 
 // FBTSEQ
-#pragma config BSEQ = 0x004    //Relative value defining which partition will be active after device Reset; the partition containing a lower boot number will be active
-#pragma config IBSEQ = 0xFFB    //The one's complement of BSEQ; must be calculated by the user and written during device programming.
+#pragma config BSEQ = 0x002    //Relative value defining which partition will be active after device Reset; the partition containing a lower boot number will be active
+#pragma config IBSEQ = 0xFFD    //The one's complement of BSEQ; must be calculated by the user and written during device programming.
 
 // FBOOT
 #pragma config BTMODE = DUAL    //Device Boot Mode Configuration->Device is in Dual Partition mode
