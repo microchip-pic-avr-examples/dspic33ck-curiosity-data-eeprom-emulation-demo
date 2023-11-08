@@ -15,7 +15,7 @@ The alternate solution of using an external, serial EEPROM device may not be app
 This 16-Bit Data EEPROM Emulation library presents a third alternative that addresses these issues. This library features an interface similar to an internal data EEPROM, which
 uses available program memory and can improve endurance by a factor as high as 500.
 
-This code example demonstrate the usage of 16-Bit Data EEPROM Emulation Library.
+This code example demonstrates the usage of 16-Bit Data EEPROM Emulation Library.
 
 ## Related Documentation
 
@@ -42,19 +42,21 @@ This code example demonstrate the usage of 16-Bit Data EEPROM Emulation Library.
 There are 2 examples in this repository. One example uses single panel and another demonstrates dual panel capability of DEE.
 
 ## Example1:
-This demo runs the Data EEPROM Emulation , if emulation is succesful then prints a message saying "Data EEPROM Emulation successful. Value at address 0 is 1024 and address1 is 1025"
+This demo runs the Data EEPROM Emulation , if emulation is successful then prints a message to the serial terminal saying "Data EEPROM Emulation successful. Value at address 0 is 1024 and address1 is 1025"
 If emulation fails it prints a message saying "Data EEPROM Emulation failed".
 
 ## Example2:
-There are 2 MPLABX projects under folder "dspic33ck-curiosity-dual-panel-dee-demo". One project for parttion1 another for partition2.
+There are 2 MPLABX projects under folder "dspic33ck-curiosity-dual-panel-dee-demo". One project for partition1 another for partition2.
 These projects are already linked so that when dee-dual-panel-demo-partition1.X is built and programmed, it programs both the partitions.
 
 After programming , user will see the following data on the serial terminal on successful emulation,
+
 ![image](images/partition1.jpg)
 
 After some time , once the emulation is completed and output is displayed, reset the board.
 
 The following data will be displayed on successful emulation.
+
 ![image](images/partition2.jpg)
 
 ## Accessing 16-Bit Data EEPROM Emulation Library
