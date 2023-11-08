@@ -43,7 +43,7 @@ There are 2 examples in this repository. One example uses single panel and anoth
 
 ## Example1:
 This demo runs the Data EEPROM Emulation , if emulation is successful then prints a message to the serial terminal saying "Data EEPROM Emulation successful. Value at address 0 is 1024 and address1 is 1025"
-If emulation fails it prints a message saying "Data EEPROM Emulation failed".
+If emulation fails it prints a message to the serial terminal saying "Data EEPROM Emulation failed".
 
 ## Example2:
 There are 2 MPLABX projects under folder "dspic33ck-curiosity-dual-panel-dee-demo". One project for partition1 another for partition2.
