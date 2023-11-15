@@ -46,14 +46,24 @@ This demo runs the Data EEPROM Emulation , if emulation is successful then print
 If emulation fails it prints a message to the serial terminal saying "Data EEPROM Emulation failed".
 
 ## Example2:
-There are 2 MPLABX projects under folder "dspic33ck-curiosity-dual-panel-dee-demo". One project for partition1 another for partition2.
-These projects are already linked so that when dee-dual-panel-demo-partition1.X is built and programmed, it programs both the partitions.
+There are 2 MPLABX projects under folder "dspic33ck-curiosity-dual-panel-dee-demo". One project for programming the first partition another for programming the second partition.
 
-After programming , user will see the following data on the serial terminal on successful emulation,
+In a typical field scenario, boot-loader will help to do a live update i.e. boot-loader will help to download the new application to the secondary
+partition and this new application will be configured such that on reboot, application in secondary partition will execute(secondary partition
+becomes primary or active partition).
+
+If we want to program both the partitions of the microcontroller, MPLABX provides an option to create an unified hex file for programming both program memory partitions with different applications. In order to do that users have to configure one MPLABX project with XC16(Global Options) ->Partition as "Partition One/Active" and another MPLABX project with XC16(Global Options) ->Partition as "Partition Two/Inactive". Then second MPLABX project needs to be linked to first MPLABX project as loadable as shown below.
+
+![image](images/projectConfig.jpg)
+
+The projects in this example are already linked so that when dee-dual-panel-demo-partition1.X is built and programmed, it programs both the partitions.
+
+After programming, the application in the first partition(active partition) will execute and DEE library will use the inactive partition(second partition) to store the DEE data. User will see the following data on the serial terminal on successful emulation,
 
 ![image](images/partition1.jpg)
 
-After some time , once the emulation is completed and output is displayed, reset the board.
+After some time, once the emulation is completed and output is displayed, reset the board. On resetting the board
+application in second partition will execute(second partition will become the active partition). DEE Library will check if there is any data available in the active partition from the previous iteration, if so it copies the data to the inactive partition(first partition) and continue with the emulation.
 
 The following data will be displayed on successful emulation.
 
