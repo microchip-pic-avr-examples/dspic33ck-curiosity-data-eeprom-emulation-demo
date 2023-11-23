@@ -63,11 +63,14 @@ After programming, the application in the first partition(active partition) will
 ![image](images/partition1.jpg)
 
 After some time, once the emulation is completed and output is displayed, reset the board. On resetting the board
-application in second partition will execute(second partition will become the active partition). DEE Library will check if there is any data available in the active partition from the previous iteration, if so it copies the data to the inactive partition(first partition) and continue with the emulation.
+application in the second partition will execute(second partition will become the active partition). DEE Library will check if there is any data available in the active partition from the previous iteration, if so it copies the data to the inactive partition(first partition), delete the previous iteration data from the active partition and continue with the emulation.
 
 The following data will be displayed on successful emulation.
 
 ![image](images/partition2.jpg)
+
+## Important Note
+If there is no requirement for partition switching, the entire second partition(inactive partition) can be used for storing the DEE data. If partition switching is required make sure that free space in executable partition(active partition) is larger than the required DEE data structure size.
 
 ## Accessing 16-Bit Data EEPROM Emulation Library
 
