@@ -36,10 +36,11 @@ This code example demonstrates the usage of 16-Bit Data EEPROM Emulation Library
 - dsPIC33CK Curiosity Development Board (https://www.microchip.com/DM330030)
 - Micro USB Cable
 
-
+**Note:** The word panel and partition means the same thing and used interchangeably in this document.
 
 ## Operation
-There are 2 examples in this repository. One example uses single panel and another demonstrates dual panel capability of DEE.
+There are 2 examples in this repository. Example1 uses single panel and Example2 demonstrates dual panel capability of DEE.
+Using dual panel is useful to not cause CPU execution stall during the normal runtime mode when the applications uses the DEE, which would be stored in the inactive partition.
 
 ## Example1:
 This demo runs the Data EEPROM Emulation , if emulation is successful then prints a message to the serial terminal saying "Data EEPROM Emulation successful. Value at address 0 is 1024 and address1 is 1025"
@@ -62,7 +63,7 @@ After programming, the application in the first partition(active partition) will
 
 ![image](images/partition1.jpg)
 
-After some time, once the emulation is completed and output is displayed, reset the board. On resetting the board
+After some time, once the emulation is completed and output is displayed, user has to reset the board. The aplication in the first partition, configures the configuration bits BSEQ and IBSEQ in the second partition, such that on reset second partition becomes the active partition. On resetting the board
 application in the second partition will execute(second partition will become the active partition). DEE Library will check if there is any data available in the active partition from the previous iteration, if so it copies the data to the inactive partition(first partition), delete the previous iteration data from the active partition and continue with the emulation.
 
 The following data will be displayed on successful emulation.
