@@ -64,7 +64,7 @@ After programming, the application in the first partition(active partition) will
 ![image](images/partition1.jpg)
 
 After some time, once the emulation is completed and output is displayed, user has to reset the board. The application in the first partition, configures the configuration bits BSEQ and IBSEQ in the second partition, such that on reset second partition becomes the active partition. On resetting the board
-application in the second partition will execute(second partition will become the active partition). DEE Library will check if there is any data available in the active partition from the previous iteration, if so it copies the data to the inactive partition(first partition), delete the previous iteration data from the active partition and continue with the emulation.
+application in the second partition will execute. DEE Library will check if there is any data available in the active partition from the previous iteration, if so it copies the data to the inactive partition(first partition), delete the previous iteration data from the active partition and continue with the emulation.
 
 The following data will be displayed on successful emulation.
 
