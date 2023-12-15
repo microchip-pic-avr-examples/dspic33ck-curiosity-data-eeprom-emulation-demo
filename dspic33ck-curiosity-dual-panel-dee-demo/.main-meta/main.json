@@ -1,0 +1,48 @@
+{
+   "metaDataVersion": "1.0.0",
+   "category": "com.microchip.ide.project",
+   "content": {
+      "metaDataVersion": "1.3.0",
+      "name": "com.microchip.mplabx.project.dspic33ck-curiosity-dual-panel-data-eeprom-emulation-demo",
+      "version": "1.0.0",
+      "displayName": "dsPIC33CK Curiosity Dual Partition Flash Data EEPROM Emulation Demo",
+      "projectName": "dspic33ck-curiosity-dual-panel-data-eeprom-emulation-demo",
+      "shortDescription": "dsPIC33CK Curiosity Dual Partition Flash Data EEPROM Emulation Demo",
+      "ide": {
+         "name": "MPLABX",
+         "semverRange": ">=6.15.0"
+      },
+      "compiler": {
+         "name": "XC16",
+         "semverRange": "^2.0.0"
+      },
+      "dfp": {
+         "name": "dsPIC33CK-MP_DFP",
+         "semverRange": ">=1.6.176"
+      },
+      "configurator": {
+         "name": "MCC",
+         "semverRange": ">=5.1.1"
+      },
+      "device": {
+         "metaDataVersion": "1.0.0",
+         "category": "com.microchip.portal.contentRef",
+         "content": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.device",
+            "name": "DSPIC33CK256MP508",
+            "versionRange": "*"
+         }
+      },
+      "peripherals": [
+         "UART",
+         "FLASH"
+      ],
+      "keywords": [
+         "EEPROM",
+         "DEE",
+         "Data EEPROM Emulation",
+         "Dual Partition Flash"
+      ]
+   }
+}
